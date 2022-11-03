@@ -6,11 +6,11 @@ import {
 } from 'class-validator';
 
 export class CreateOrderRequest {
-  @IsString
+  @IsString()
   @IsNotEmpty()
   name: string;
 
-  @IsPositive
+  @IsPositive()
   price: number;
 
   @IsPhoneNumber()
