@@ -10,7 +10,7 @@ export class CreateOrderRequest {
   @IsNotEmpty()
   name: string;
 
-  @IsPositive()
+  @IsPositive
   price: number;
 
   @IsPhoneNumber()
